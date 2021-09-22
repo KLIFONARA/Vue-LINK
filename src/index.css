@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap");
+
+@layer components {
+  .link-card {
+    @apply flex w-full justify-center items-center bg-white border-2 border-white text-black hover:bg-black hover:text-white rounded-md px-2 py-3 mb-4 cursor-pointer transition-all;
+  }
+
+  .link-card-placeholder {
+    @apply bg-white rounded-md border-2 px-2 py-3 mb-4 h-14 grid grid-cols-10 place-content-center gap-2;
+  }
+
+  .category-card {
+    @apply inline-flex whitespace-nowrap border border-white p-2 rounded-md cursor-pointer;
+  }
+}
+
+body {
+  @apply bg-black;
+}
